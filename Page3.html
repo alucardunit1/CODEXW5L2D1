@@ -6,20 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <nav style="border: 1px solid red;">
-        <a href="Page2.html">Page 2</a>
-        <a href="Page1.html">Page 1</a> 
+    <nav style="border: 1px solid red; display: inline-block; padding: 5px;">
+        <a href="Page2.html" style="margin-right: 10px;">Page 2</a>
+        <a href="Page1.html" style="margin-right: 10px;">Page 1</a> 
         <a href="index.html">Index</a>
     </nav>
     <p>
-        <button onclick="changeContent()">Button1 Here</button>
-        <script>
-            function changeContent() {
-            document.querySelector('h2').innerHTML = 'New paragraph content';
-            }
-        </script>
+        <button id="p3butt" onclick="changeContent()">Button1 Here</button>
+
     </p>
-    <h2>Test here</h2>
-    
+    <h2 id="p3head">Test here</h2>
+    <p id="p3para">
+        testing 2 area
+    </p>
+    <script src="lastleg.js"></script>
 </body>
 </html>
